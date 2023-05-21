@@ -48,7 +48,7 @@ def start():
     wait(500)
     times = int(sys.argv[1]) if len(sys.argv) >= 2 else 1
     print(f"executing {times} times")
-    with open('input_sram_4-3-trool-pavo.csv', 'r') as file:
+    with open('input.csv', 'r') as file:
         inp = [line.replace('"', '').split(';') for line in file.read().splitlines()]
     for i in range(times):
         print(f"iteration {i}:\n\n")
